@@ -13,7 +13,7 @@ import './screens/historique_screen.dart';
 import './screens/implantologie_screen.dart';
 import './screens/auth screen.dart';
 import './providers/auth.dart';
-import './providers/auth.dart';
+import './providers/events.dart';
 import 'package:camera/camera.dart';
 
 List<CameraDescription> cameras;
@@ -33,7 +33,9 @@ class MyApp extends StatelessWidget {
           ChangeNotifierProvider(
             create: (ctx) => Auth(),
           ),
-
+          ChangeNotifierProvider(
+            create: (ctx) => Events(),
+          ),
         ],
         child: Consumer<Auth>(
           builder: (ctx, auth, _) => MaterialApp(
