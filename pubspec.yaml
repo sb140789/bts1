@@ -50,10 +50,13 @@ dev_dependencies:
   flutter_test:
       sdk: flutter
 
+
 flutter_icons:
-android: "launcher_icon"
-ios: true
-image_path: "assets/icons/icon.png"
+  ios: true
+  android: true
+  image_path_ios: "assets/icons/icon.png"
+  image_path_android: "assets/icons/icon.png"
+
 
   # For information on the generic Dart part of this file, see the
   # following page: https://dart.dev/tools/pub/pubspec
@@ -73,6 +76,7 @@ flutter:
       - assets/flutter_assets/assets/models/model.tflite
       - assets/models/
       - assets/labels/
+      - assets/icons/
     #  - images/a_dot_ham.jpeg
 
     # An image asset can refer to one or more resolution-specific "variants", see
